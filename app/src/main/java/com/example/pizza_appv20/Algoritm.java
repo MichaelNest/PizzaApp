@@ -45,7 +45,34 @@ public class Algoritm {
     //16. Create string-resourse for заголовка действия - чтоб появлялась надпись если значек не влазит в основное поле и виносится в область overflow
           //<string name="create_order_title">Create Order</string>
 
-    //17.
+    //17. Create folder-menu in res: New-Android Resourse Directory
+
+    //18. Create menu resourse file: File-New-Android Resourse File - имя файла menu_main и папка Menu
+
+    //19. Create id, title, icon, orderInCategory(порядок следования элементов), showAsAction(форма отображения елемента)
+
+    //20. Create public boolean onCreateOptionMenu(Menu menu) to MainActivity.java - она создает объект Menu, который является Java-представлением файла ресурсов меню,
+         //а все действия из файла ресурсов преобразуются в объекты MenuItem. Все они добавляются на панель приложения.
+
+    //21. Create public boolean onOptionsitemSelected(MenuItem item) - определение действия при нажатии
+
+    //22. Кнопка Вверх для возврвта. Прописываем в Манифест to OrderActivity, что активность MainActivity is parent for OrderActivity:
+          // android:parentActivityName=".MainActivity"
+
+    //23. Активизация кноппки возврата в родительскую активность для OrderActivity:
+          // ActionBar actionBar = getSupportActionBar();
+          // actionBar.setDisplayHomeAsUpEnabled(true);
+
+    //24. Добавление провайдера передачи информации в файл menu_main.xml - добавление строкового ресурса action_share to string.xml
+          // <string name="action_share">Share</string>
+
+    //25. Действие передачи информации добавляется в файл ресурсов меню: id, title, orderInCategory, showAsAction, app actionProvaiderClass
+
+    //26.
+
+
+
+
 
 
 
