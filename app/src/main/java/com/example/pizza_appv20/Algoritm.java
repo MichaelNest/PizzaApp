@@ -23,7 +23,7 @@ public class Algoritm {
                                                   //Theme.AppCompat.Light.DarkActionBar, поэтому мы используем
                                                   //накладку темы ThemeOverlay.AppCompat.Dark.ActionBar.
 
-    //7. Add tollbar into active_main - <include layout="@layout/toolbar_main"/>
+    //7. Add toolbar into active_main - <include layout="@layout/toolbar_main"/>
 
     //8. Import to MainActivity - import android.support.v7.widget.Toolbar;
 
@@ -68,8 +68,21 @@ public class Algoritm {
 
     //25. Действие передачи информации добавляется в файл ресурсов меню: id, title, orderInCategory, showAsAction, app actionProvaiderClass
 
-    //26.
+    //26. Add to MainActivity private ShareActionProvider shareActionProvider;
 
+    //27. Add to onCreateOptionsMenu() :  MenuItem menuItem = (MenuItem)findViewById(R.id.action_share);
+                    // shareActionProvider = (ShareActionProvider)MenuItemCompat.getActionProvider(menuItem); - получить ссылку на провайдер действия
+                                        // и присвоить ее приватной переменной
+                                       // setShareActionIntent("Want to join me for pizza");
+
+    //28. Create method; setShareActionIntent(String text){
+    //        Intent intent = new Intent(Intent.ACTION_SEND);
+    //        intent.setType("text/plain");
+    //        intent.putExtra(Intent.EXTRA_TEXT, text);
+    //        shareActionProvider.setShareIntent(intent);
+    //    } создание интента и передача его провайдеру действия
+
+    //29.
 
 
 
